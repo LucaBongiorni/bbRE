@@ -1,7 +1,7 @@
 apt-get update
 apt-get upgrade
 pip install capstone
-apt-get install sigrok
+apt-get install sigrok subversion
 
 echo 0 > /proc/sys/kernel/randomize_va_space
 
@@ -17,6 +17,7 @@ git clone https://github.com/devttys0/binwalk.git
 cd binwalk
 ./deps.sh
 python setup.py install
+cd ..
 
 svn co svn://flashrom.org/flashrom/trunk flashrom
 cd flashrom ; ./configure ; make ; make install ; cd ..
