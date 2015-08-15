@@ -18,8 +18,16 @@ cd binwalk
 ./deps.sh
 python setup.py install
 
+svn co svn://flashrom.org/flashrom/trunk flashrom
+cd flashrom ; ./configure ; make ; make install ; cd ..
+
 apt-get remove automake1.9
 apt-get install automake1.10
 
-svn co http://svn.code.sf.net/p/urjtag/svn/trunk urjtag
-cd urjtag/urjtag/ ; ./autogen.sh ; make ; make install ; cd ..
+#urJtag svn broken
+#svn co http://svn.code.sf.net/p/urjtag/svn/trunk urjtag
+#cd urjtag/urjtag/ ; ./autogen.sh ; make ; make install ; cd ..
+
+wget http://sourceforge.net/projects/urjtag/files/urjtag/0.10/urjtag-0.10.tar.gz/download
+tar -zxvf download ; cd urjtag-0.10/ ; ./configure ; make ; make install ; cd ..
+
