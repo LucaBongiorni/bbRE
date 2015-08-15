@@ -1,3 +1,5 @@
+mv led_aging.sh /etc/init.d/led_aging.sh
+
 apt-get update
 apt-get upgrade
 apt-get -y install sigrok subversion
