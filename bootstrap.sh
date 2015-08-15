@@ -1,7 +1,8 @@
 apt-get update
 apt-get upgrade
+apt-get -y install sigrok subversion
+
 pip install capstone
-apt-get install sigrok subversion
 
 echo 0 > /proc/sys/kernel/randomize_va_space
 
@@ -22,8 +23,8 @@ cd ..
 svn co svn://flashrom.org/flashrom/trunk flashrom
 cd flashrom ; ./configure ; make ; make install ; cd ..
 
-apt-get remove automake1.9
-apt-get install automake1.10
+apt-get -y remove automake1.9
+apt-get -y install automake1.10
 
 #urJtag svn broken
 #svn co http://svn.code.sf.net/p/urjtag/svn/trunk urjtag
