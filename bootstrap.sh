@@ -2,7 +2,7 @@ mv led_aging.sh /etc/init.d/led_aging.sh
 
 apt-get -y update
 apt-get -y upgrade
-apt-get -y install sigrok subversion
+apt-get -y install sigrok subversion libftdi-dev
 
 pip install capstone
 
@@ -18,7 +18,7 @@ cd /home/student
 git clone https://github.com/binaryninja/ROPgadget.git
 git clone https://github.com/devttys0/binwalk.git
 cd binwalk
-./deps.sh
+yes | ./deps.sh
 python setup.py install
 cd ..
 
