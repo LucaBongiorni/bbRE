@@ -2,7 +2,7 @@ mv fix/ledfix.sh /etc/init.d/led_aging.sh
 
 apt-get -y update
 apt-get -y upgrade
-apt-get -y install sigrok subversion libftdi-dev libpci-dev
+apt-get -y install sigrok subversion libftdi-dev libpci-dev openocd
 
 pip install capstone
 
