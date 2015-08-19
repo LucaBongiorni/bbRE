@@ -17,9 +17,11 @@ printf 'y' | ./deps.sh
 python setup.py install
 cd ..
 
-svn co svn://flashrom.org/flashrom/trunk flashrom
-cd flashrom ; ./configure ; make ; make install ; cd ..
-
+#svn co svn://flashrom.org/flashrom/trunk flashrom
+#cd flashrom ; ./configure ; make ; make install ; cd ..
+# compile from svn working but we will use stable below instead
+wget http://download.flashrom.org/releases/flashrom-0.9.8.tar.bz2
+bunzip2 flashrom-0.9.8.tar.bz2 ; tar xvf flashrom-0.9.8.tar; cd flashrom-0.9.8 ; make ; make install
 
 apt-get -y remove automake1.9
 apt-get -y install automake1.10
