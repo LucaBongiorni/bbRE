@@ -2,7 +2,7 @@ mv fix/ledfix.sh /etc/init.d/led_aging.sh
 
 apt-get -y update
 apt-get -y upgrade
-apt-get -y install sigrok subversion libftdi-dev libpci-dev openocd
+apt-get -y install sigrok subversion libftdi-dev libpci-dev
 
 pip install capstone
 
@@ -34,3 +34,6 @@ tar -zxvf download ; cd urjtag-0.10/ ; ./configure ; make ; make install ; cd ..
 adduser student
 adduser student sudo
 cd /home/student
+ wget http://sourceforge.net/projects/openocd/files/openocd/0.9.0/openocd-0.9.0.tar.gz/download
+ mv download openocd.zip ; unzip openocd.zip ; cd openocd-0.9.0 ; ./configure ; make ; make install
+ 
