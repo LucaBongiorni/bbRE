@@ -3,7 +3,7 @@ mv fix/ledfix.sh /etc/init.d/led_aging.sh
 
 apt-get -y update
 apt-get -y upgrade
-apt-get -y install subversion libftdi-dev libpci-dev python3.2-dev libzip-dev libudev-dev
+apt-get -y install subversion libftdi-dev libpci-dev python3.2-dev libzip-dev libudev-dev unzip
 
 #may not need this
 pip install capstone
