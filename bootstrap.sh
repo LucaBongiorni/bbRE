@@ -37,8 +37,8 @@ apt-get -y remove automake1.9
 apt-get -y install automake1.10
 
 #urJtag svn broken/doesnt compile... using stable
-#svn co http://svn.code.sf.net/p/urjtag/svn/trunk urjtag
-#cd urjtag/urjtag/ ; ./autogen.sh ; make ; make install ; cd ..
+svn co http://svn.code.sf.net/p/urjtag/svn/trunk urjtag
+cd urjtag/urjtag/ ; ./autogen.sh ; make ; make install ; cd ..
 
 wget http://sourceforge.net/projects/urjtag/files/urjtag/0.10/urjtag-0.10.tar.gz/download
 tar -zxvf download ; cd urjtag-0.10/ ; ./configure ; make ; make install ; cd ..
@@ -46,25 +46,25 @@ tar -zxvf download ; cd urjtag-0.10/ ; ./configure ; make ; make install ; cd ..
 wget http://sourceforge.net/projects/openocd/files/openocd/0.9.0/openocd-0.9.0.tar.gz/download
 mv download openocd.zip ; unzip openocd.zip ; cd openocd-0.9.0 ; ./configure ; make ; make install
 
-wget http://sourceforge.net/projects/check/files/check/0.10.0/check-0.10.0.tar.gz; tar -zxvf check-0.10.0.tar.gz; cd check-0.10.0; 
-./configure; make; make install; cd ..
+#wget http://sourceforge.net/projects/check/files/check/0.10.0/check-0.10.0.tar.gz; tar -zxvf check-0.10.0.tar.gz; cd check-0.10.0; 
+#./configure; make; make install; cd ..
 
-wget http://sourceforge.net/projects/libusb/files/libusb-1.0/libusb-1.0.19/libusb-1.0.19.tar.bz2; bunzip2 libusb-1.0.19.tar.bz2; tar xvf libusb-1.0.19.tar; cd libusb-1.0.19
-./configure; make; make install; cd ..
+#wget http://sourceforge.net/projects/libusb/files/libusb-1.0/libusb-1.0.19/libusb-1.0.19.tar.bz2; bunzip2 libusb-1.0.19.tar.bz2; tar xvf libusb-1.0.19.tar; cd libusb-1.0.19
+#./configure; make; make install; cd ..
 
-wget http://sigrok.org/download/source/libserialport/libserialport-0.1.0.tar.gz; tar -zxvf libserialport-0.1.0.tar.gz; cd libserialport-0.1.0
-./configure; make; make install; cd ..
+#wget http://sigrok.org/download/source/libserialport/libserialport-0.1.0.tar.gz; tar -zxvf libserialport-0.1.0.tar.gz; cd libserialport-0.1.0
+#./configure; make; make install; cd ..
 
-wget http://sigrok.org/download/source/libsigrokdecode/libsigrokdecode-0.3.1.tar.gz; tar -zxvf libsigrokdecode-0.3.1.tar.gz; cd libsigrokdecode-0.3.1 
-./configure; make; make install; cd ..
+#wget http://sigrok.org/download/source/libsigrokdecode/libsigrokdecode-0.3.1.tar.gz; tar -zxvf libsigrokdecode-0.3.1.tar.gz; cd libsigrokdecode-0.3.1 
+#./configure; make; make install; cd ..
 
-wget http://sigrok.org/download/source/libsigrok/libsigrok-0.3.0.tar.gz; tar -zxvf libsigrok-0.3.0.tar.gz; cd libsigrok-0.3.0
-./configure; make; make install; cd ..
+#wget http://sigrok.org/download/source/libsigrok/libsigrok-0.3.0.tar.gz; tar -zxvf libsigrok-0.3.0.tar.gz; cd libsigrok-0.3.0
+#./configure; make; make install; cd ..
 
-ldconfig /usr/local/lib
+#ldconfig /usr/local/lib
 
-wget http://sigrok.org/download/source/sigrok-cli/sigrok-cli-0.5.0.tar.gz; tar -zxvf sigrok-cli-0.5.0.tar.gz; cd sigrok-cli-0.5.0
-./configure; make; make install; cd ..
+#wget http://sigrok.org/download/source/sigrok-cli/sigrok-cli-0.5.0.tar.gz; tar -zxvf sigrok-cli-0.5.0.tar.gz; cd sigrok-cli-0.5.0
+#./configure; make; make install; cd ..
 
 
  
