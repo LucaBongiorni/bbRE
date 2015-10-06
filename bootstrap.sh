@@ -44,7 +44,8 @@ wget http://sourceforge.net/projects/urjtag/files/urjtag/0.10/urjtag-0.10.tar.gz
 tar -zxvf download ; cd urjtag-0.10/ ; ./configure ; make ; make install ; cd ..
 
 wget http://sourceforge.net/projects/openocd/files/openocd/0.9.0/openocd-0.9.0.tar.gz/download
-mv download openocd.zip ; unzip openocd.zip ; cd openocd-0.9.0 ; ./configure ; make ; make install
+mv download openocd.tar.gz ; tar -zxvf openocd.tar.gz ; cd openocd-0.9.0 ; ./configure ; make ; make install
+
 
 #wget http://sourceforge.net/projects/check/files/check/0.10.0/check-0.10.0.tar.gz; tar -zxvf check-0.10.0.tar.gz; cd check-0.10.0; 
 #./configure; make; make install; cd ..
